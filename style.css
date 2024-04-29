@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-white: #ffffff;
+    --secondary-grey: #c0c0c0;
+    --blue-button: #167bf7;
+    --background-color: #00030c;
+    --primary-font: 'Inter', sans-serif;
+    --blue-button-hover: #4f9eff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--primary-white);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.primary {
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__button {
+    background-color: var(--blue-button);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--primary-white);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__button:hover {
+    background-color: var(--blue-button-hover);
+}
+
+.secondary_button {
+    background-color: transparent;
+    border: 2px solid var(--primary-white);
+}
+
+.secondary_button:hover {
+    background-color: var(--blue-button-hover);
+    border-color: transparent;
+}
+
+.container__notice {
+    font-size: 12px;
+    color: var(--secondary-grey);
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.container__description__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-white);
+    margin-bottom: 0.15em;
+}
+
+.container__description__text{
+    color: var(--secondary-grey);
+}
+
+.secondary_container__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secondary_container__button:hover {
+    background-color: var(--blue-button-hover);
+}
+
+.telas_image {
+    justify-self: center;
+}
+
+.devices {
+    height: 65vh;
+    text-align: center;
+}
+
+.devices__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-white);
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4em 0;
+}
+
+.devices__list__image {
+    width: 24em;
+}
+
+.devices__list__item {
+    font-size: 32px;
+    color: var(--primary-white);
+    font-weight: 700;
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 10em 5em;
+}
+
+.footer__logo {
+    margin-bottom: 2.5em;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.footer_list__links a {
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+.footer_list__links a:hover {
+    color: var(--secondary-grey);
+}
+
+.footer__text {
+    color: var(--secondary-grey);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        height: 70vh;
+        justify-content: center;
+    }
+
+    .container__box {
+        margin: 2em 2em;
+    }
+
+    .container__image {
+        width: 50vw;
+    }
+
+    .secondary {
+        margin: 0 2em;
+        text-align: center;
+    }
+
+    .secondary__image {
+        width: 60vw;
+    }
+
+    .devices {
+        height: auto;
+        margin: 2em 0;
+    }
+
+    .devices__list {
+        display: block;
+    }
+
+    .footer {
+        margin: 2em 2em;
+    }
+
+    .footer__list {
+        display: block;
+    }
+}
